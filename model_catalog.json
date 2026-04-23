@@ -66,30 +66,6 @@
     "created_at": "2024-09-25T00:00:00Z"
   },
   {
-    "model_name": "mlx-community/Llama-3.2-3B-Instruct-4bit",
-    "display_name": "Llama 3.2 3B Instruct (MLX)",
-    "description": "MLX build of Meta's Llama 3.2 3B. Faster inference on Apple Silicon than GGUF.",
-    "developer": "Meta",
-    "downloads": 200000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/Llama-3.2-3B-Instruct-4bit",
-        "path": "https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-4bit",
-        "file_size": "1.82 GB"
-      },
-      {
-        "model_id": "mlx-community/Llama-3.2-3B-Instruct-8bit",
-        "path": "https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-8bit",
-        "file_size": "3.42 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": true,
-    "library_name": "mlx",
-    "created_at": "2024-09-25T00:00:00Z"
-  },
-  {
     "model_name": "bartowski/Qwen2.5-7B-Instruct-GGUF",
     "display_name": "Qwen 2.5 7B Instruct",
     "description": "Alibaba's general-purpose 7B. Strong instruction following and tool calling across many languages.",
@@ -123,30 +99,6 @@
     "created_at": "2024-09-20T00:00:00Z"
   },
   {
-    "model_name": "mlx-community/Qwen2.5-7B-Instruct-4bit",
-    "display_name": "Qwen 2.5 7B Instruct (MLX)",
-    "description": "MLX build of Qwen 2.5 7B. Faster on Apple Silicon.",
-    "developer": "Alibaba",
-    "downloads": 150000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/Qwen2.5-7B-Instruct-4bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit",
-        "file_size": "4.30 GB"
-      },
-      {
-        "model_id": "mlx-community/Qwen2.5-7B-Instruct-8bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-8bit",
-        "file_size": "8.10 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": true,
-    "library_name": "mlx",
-    "created_at": "2024-09-20T00:00:00Z"
-  },
-  {
     "model_name": "bartowski/Mistral-Small-24B-Instruct-2501-GGUF",
     "display_name": "Mistral Small 3 (24B)",
     "description": "Mistral's 24B general-purpose model. Apache 2.0. Excellent at writing, multi-turn chat, and tool use.",
@@ -172,30 +124,6 @@
     ],
     "tools": true,
     "is_mlx": false,
-    "created_at": "2025-01-30T00:00:00Z"
-  },
-  {
-    "model_name": "mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
-    "display_name": "Mistral Small 3 (24B, MLX)",
-    "description": "MLX build of Mistral Small 3. Faster on Apple Silicon.",
-    "developer": "Mistral AI",
-    "downloads": 80000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
-        "path": "https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
-        "file_size": "13.40 GB"
-      },
-      {
-        "model_id": "mlx-community/Mistral-Small-24B-Instruct-2501-8bit",
-        "path": "https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-8bit",
-        "file_size": "25.10 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": true,
-    "library_name": "mlx",
     "created_at": "2025-01-30T00:00:00Z"
   },
   {
@@ -289,33 +217,6 @@
     ]
   },
   {
-    "model_name": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
-    "display_name": "Qwen 2.5 Coder 7B (MLX)",
-    "description": "MLX build of Qwen 2.5 Coder 7B for Apple Silicon.",
-    "developer": "Alibaba",
-    "downloads": 200000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
-        "file_size": "4.30 GB"
-      },
-      {
-        "model_id": "mlx-community/Qwen2.5-Coder-7B-Instruct-8bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-8bit",
-        "file_size": "8.10 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": true,
-    "library_name": "mlx",
-    "created_at": "2024-11-11T00:00:00Z",
-    "capabilities": [
-      "Coding"
-    ]
-  },
-  {
     "model_name": "bartowski/Qwen2.5-Coder-32B-Instruct-GGUF",
     "display_name": "Qwen 2.5 Coder 32B",
     "description": "Alibaba's 32B coding model \u2014 best open dense coder. For workstation-class hardware.",
@@ -341,33 +242,6 @@
     ],
     "tools": true,
     "is_mlx": false,
-    "created_at": "2024-11-11T00:00:00Z",
-    "capabilities": [
-      "Coding"
-    ]
-  },
-  {
-    "model_name": "mlx-community/Qwen2.5-Coder-32B-Instruct-4bit",
-    "display_name": "Qwen 2.5 Coder 32B (MLX)",
-    "description": "MLX build of Qwen 2.5 Coder 32B for Apple Silicon.",
-    "developer": "Alibaba",
-    "downloads": 120000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/Qwen2.5-Coder-32B-Instruct-4bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-32B-Instruct-4bit",
-        "file_size": "18.50 GB"
-      },
-      {
-        "model_id": "mlx-community/Qwen2.5-Coder-32B-Instruct-8bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-32B-Instruct-8bit",
-        "file_size": "34.80 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": true,
-    "library_name": "mlx",
     "created_at": "2024-11-11T00:00:00Z",
     "capabilities": [
       "Coding"
@@ -490,34 +364,6 @@
     ]
   },
   {
-    "model_name": "mlx-community/gemma-3-12b-it-4bit",
-    "display_name": "Gemma 3 12B Instruct (MLX)",
-    "description": "MLX build of Gemma 3 12B \u2014 multimodal on Apple Silicon.",
-    "developer": "Google",
-    "downloads": 90000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/gemma-3-12b-it-4bit",
-        "path": "https://huggingface.co/mlx-community/gemma-3-12b-it-4bit",
-        "file_size": "6.70 GB"
-      },
-      {
-        "model_id": "mlx-community/gemma-3-12b-it-8bit",
-        "path": "https://huggingface.co/mlx-community/gemma-3-12b-it-8bit",
-        "file_size": "12.50 GB"
-      }
-    ],
-    "tools": true,
-    "vision": true,
-    "is_mlx": true,
-    "library_name": "mlx",
-    "created_at": "2025-03-12T00:00:00Z",
-    "capabilities": [
-      "Vision"
-    ]
-  },
-  {
     "model_name": "ggml-org/Qwen2.5-VL-7B-Instruct-GGUF",
     "display_name": "Qwen 2.5 VL 7B",
     "description": "Alibaba's vision-language model. Best open model for GUI understanding, OCR, and screenshot-based agents (computer use). Ships with a paired mmproj file for vision.",
@@ -539,34 +385,6 @@
     "tools": true,
     "vision": true,
     "is_mlx": false,
-    "created_at": "2025-01-28T00:00:00Z",
-    "capabilities": [
-      "Vision"
-    ]
-  },
-  {
-    "model_name": "mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
-    "display_name": "Qwen 2.5 VL 7B (MLX)",
-    "description": "MLX build of Qwen 2.5 VL 7B for Apple Silicon \u2014 fast vision model for computer-use agents.",
-    "developer": "Alibaba",
-    "downloads": 110000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
-        "file_size": "4.30 GB"
-      },
-      {
-        "model_id": "mlx-community/Qwen2.5-VL-7B-Instruct-8bit",
-        "path": "https://huggingface.co/mlx-community/Qwen2.5-VL-7B-Instruct-8bit",
-        "file_size": "8.10 GB"
-      }
-    ],
-    "tools": true,
-    "vision": true,
-    "is_mlx": true,
-    "library_name": "mlx",
     "created_at": "2025-01-28T00:00:00Z",
     "capabilities": [
       "Vision"
@@ -632,29 +450,6 @@
     ]
   },
   {
-    "model_name": "mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit",
-    "display_name": "DeepSeek Coder V2 Lite (MLX)",
-    "description": "MLX build of DeepSeek Coder V2 Lite \u2014 MoE on Apple Silicon.",
-    "developer": "DeepSeek",
-    "downloads": 70000,
-    "num_quants": 1,
-    "quants": [
-      {
-        "model_id": "mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit",
-        "path": "https://huggingface.co/mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit",
-        "file_size": "9.80 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": true,
-    "library_name": "mlx",
-    "created_at": "2024-07-30T00:00:00Z",
-    "capabilities": [
-      "Coding",
-      "MoE"
-    ]
-  },
-  {
     "model_name": "lmstudio-community/Qwen3-30B-A3B-Instruct-2507-GGUF",
     "display_name": "Qwen 3 30B A3B Instruct 2507 (MoE)",
     "description": "Alibaba's 30B MoE model (3B active per token), July 2025 instruct release. General-purpose with strong tool calling \u2014 ideal for consumer GPUs with expert offload.",
@@ -680,33 +475,6 @@
     ],
     "tools": true,
     "is_mlx": false,
-    "created_at": "2025-07-21T00:00:00Z",
-    "capabilities": [
-      "MoE"
-    ]
-  },
-  {
-    "model_name": "mlx-community/Qwen3-30B-A3B-Instruct-2507-4bit",
-    "display_name": "Qwen 3 30B A3B Instruct 2507 (MLX)",
-    "description": "MLX build of Qwen 3 30B A3B MoE (July 2025 release). Near-free expert offload on Apple Silicon thanks to unified memory.",
-    "developer": "Alibaba",
-    "downloads": 130000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "mlx-community/Qwen3-30B-A3B-Instruct-2507-4bit",
-        "path": "https://huggingface.co/mlx-community/Qwen3-30B-A3B-Instruct-2507-4bit",
-        "file_size": "17.20 GB"
-      },
-      {
-        "model_id": "mlx-community/Qwen3-30B-A3B-Instruct-2507-8bit",
-        "path": "https://huggingface.co/mlx-community/Qwen3-30B-A3B-Instruct-2507-8bit",
-        "file_size": "32.50 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": true,
-    "library_name": "mlx",
     "created_at": "2025-07-21T00:00:00Z",
     "capabilities": [
       "MoE"
