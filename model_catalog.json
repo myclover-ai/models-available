@@ -1,8 +1,36 @@
 [
   {
+    "model_name": "bartowski/Llama-3.2-1B-Instruct-GGUF",
+    "display_name": "Llama 3.2 1B Instruct",
+    "description": "Meta's smallest Llama 3.2 — ultra-lightweight for devices with limited memory. Good at short conversations and basic tool calling.",
+    "developer": "Meta",
+    "downloads": 300000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+        "file_size": "0.77 GB"
+      },
+      {
+        "model_id": "bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q6_K.gguf",
+        "file_size": "1.04 GB"
+      },
+      {
+        "model_id": "bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q8_0",
+        "path": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q8_0.gguf",
+        "file_size": "1.32 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-09-25T00:00:00Z"
+  },
+  {
     "model_name": "bartowski/Llama-3.2-3B-Instruct-GGUF",
     "display_name": "Llama 3.2 3B Instruct",
-    "description": "Meta's Llama 3.2 3B Instruct — a compact, high-quality language model optimized for conversation and instruction following.",
+    "description": "Meta's Llama 3.2 3B — compact general-purpose assistant. Good balance of speed and capability for most laptops.",
     "developer": "Meta",
     "downloads": 500000,
     "num_quants": 5,
@@ -38,64 +66,635 @@
     "created_at": "2024-09-25T00:00:00Z"
   },
   {
-    "model_name": "bartowski/Llama-3.2-1B-Instruct-GGUF",
-    "display_name": "Llama 3.2 1B Instruct",
-    "description": "Meta's smallest Llama 3.2 model — ultra-lightweight for devices with limited memory.",
+    "model_name": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+    "display_name": "Llama 3.2 3B Instruct (MLX)",
+    "description": "MLX build of Meta's Llama 3.2 3B. Faster inference on Apple Silicon than GGUF.",
     "developer": "Meta",
-    "downloads": 300000,
-    "num_quants": 3,
+    "downloads": 200000,
+    "num_quants": 2,
     "quants": [
       {
-        "model_id": "bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q4_K_M",
-        "path": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
-        "file_size": "0.77 GB"
+        "model_id": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+        "path": "https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-4bit",
+        "file_size": "1.82 GB"
       },
       {
-        "model_id": "bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q6_K",
-        "path": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q6_K.gguf",
-        "file_size": "1.04 GB"
-      },
-      {
-        "model_id": "bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q8_0",
-        "path": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q8_0.gguf",
-        "file_size": "1.32 GB"
+        "model_id": "mlx-community/Llama-3.2-3B-Instruct-8bit",
+        "path": "https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-8bit",
+        "file_size": "3.42 GB"
       }
     ],
     "tools": true,
-    "is_mlx": false,
+    "is_mlx": true,
+    "library_name": "mlx",
     "created_at": "2024-09-25T00:00:00Z"
   },
   {
-    "model_name": "bartowski/Qwen2.5-3B-Instruct-GGUF",
-    "display_name": "Qwen 2.5 3B Instruct",
-    "description": "Alibaba's Qwen 2.5 3B — excellent multilingual support with strong reasoning capabilities.",
+    "model_name": "bartowski/Qwen2.5-7B-Instruct-GGUF",
+    "display_name": "Qwen 2.5 7B Instruct",
+    "description": "Alibaba's general-purpose 7B. Strong instruction following and tool calling across many languages.",
     "developer": "Alibaba",
-    "downloads": 200000,
+    "downloads": 400000,
     "num_quants": 4,
     "quants": [
       {
-        "model_id": "bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-Q4_K_M",
-        "path": "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-Q4_K_M.gguf",
-        "file_size": "2.13 GB"
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+        "file_size": "4.68 GB"
       },
       {
-        "model_id": "bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-Q5_K_M",
-        "path": "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-Q5_K_M.gguf",
-        "file_size": "2.42 GB"
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q5_K_M.gguf",
+        "file_size": "5.44 GB"
       },
       {
-        "model_id": "bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-Q6_K",
-        "path": "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-Q6_K.gguf",
-        "file_size": "2.77 GB"
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q6_K.gguf",
+        "file_size": "6.25 GB"
       },
       {
-        "model_id": "bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-Q8_0",
-        "path": "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-Q8_0.gguf",
-        "file_size": "3.59 GB"
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q8_0",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q8_0.gguf",
+        "file_size": "8.10 GB"
       }
     ],
     "tools": true,
     "is_mlx": false,
     "created_at": "2024-09-20T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "display_name": "Qwen 2.5 7B Instruct (MLX)",
+    "description": "MLX build of Qwen 2.5 7B. Faster on Apple Silicon.",
+    "developer": "Alibaba",
+    "downloads": 150000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit",
+        "file_size": "4.30 GB"
+      },
+      {
+        "model_id": "mlx-community/Qwen2.5-7B-Instruct-8bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-8bit",
+        "file_size": "8.10 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2024-09-20T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Mistral-Small-24B-Instruct-2501-GGUF",
+    "display_name": "Mistral Small 3 (24B)",
+    "description": "Mistral's 24B general-purpose model. Apache 2.0. Excellent at writing, multi-turn chat, and tool use.",
+    "developer": "Mistral AI",
+    "downloads": 250000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/Mistral-Small-24B-Instruct-2501-GGUF/Mistral-Small-24B-Instruct-2501-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Mistral-Small-24B-Instruct-2501-GGUF/resolve/main/Mistral-Small-24B-Instruct-2501-Q4_K_M.gguf",
+        "file_size": "14.33 GB"
+      },
+      {
+        "model_id": "bartowski/Mistral-Small-24B-Instruct-2501-GGUF/Mistral-Small-24B-Instruct-2501-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Mistral-Small-24B-Instruct-2501-GGUF/resolve/main/Mistral-Small-24B-Instruct-2501-Q5_K_M.gguf",
+        "file_size": "16.76 GB"
+      },
+      {
+        "model_id": "bartowski/Mistral-Small-24B-Instruct-2501-GGUF/Mistral-Small-24B-Instruct-2501-Q6_K",
+        "path": "https://huggingface.co/bartowski/Mistral-Small-24B-Instruct-2501-GGUF/resolve/main/Mistral-Small-24B-Instruct-2501-Q6_K.gguf",
+        "file_size": "19.35 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2025-01-30T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+    "display_name": "Mistral Small 3 (24B, MLX)",
+    "description": "MLX build of Mistral Small 3. Faster on Apple Silicon.",
+    "developer": "Mistral AI",
+    "downloads": 80000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+        "path": "https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-4bit",
+        "file_size": "13.40 GB"
+      },
+      {
+        "model_id": "mlx-community/Mistral-Small-24B-Instruct-2501-8bit",
+        "path": "https://huggingface.co/mlx-community/Mistral-Small-24B-Instruct-2501-8bit",
+        "file_size": "25.10 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2025-01-30T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Llama-3.3-70B-Instruct-GGUF",
+    "display_name": "Llama 3.3 70B Instruct",
+    "description": "Meta's flagship 70B. Near-frontier general-purpose quality for workstation-class hardware.",
+    "developer": "Meta",
+    "downloads": 350000,
+    "num_quants": 1,
+    "quants": [
+      {
+        "model_id": "bartowski/Llama-3.3-70B-Instruct-GGUF/Llama-3.3-70B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q4_K_M.gguf",
+        "file_size": "42.52 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-12-06T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Qwen2.5-Coder-3B-Instruct-GGUF",
+    "display_name": "Qwen 2.5 Coder 3B",
+    "description": "Alibaba's small coding model. Good for autocomplete and local coding assistance on modest hardware.",
+    "developer": "Alibaba",
+    "downloads": 180000,
+    "num_quants": 4,
+    "quants": [
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/Qwen2.5-Coder-3B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-3B-Instruct-Q4_K_M.gguf",
+        "file_size": "2.10 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/Qwen2.5-Coder-3B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-3B-Instruct-Q5_K_M.gguf",
+        "file_size": "2.40 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/Qwen2.5-Coder-3B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-3B-Instruct-Q6_K.gguf",
+        "file_size": "2.76 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/Qwen2.5-Coder-3B-Instruct-Q8_0",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-3B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-3B-Instruct-Q8_0.gguf",
+        "file_size": "3.58 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-11-11T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Qwen2.5-Coder-7B-Instruct-GGUF",
+    "display_name": "Qwen 2.5 Coder 7B",
+    "description": "Alibaba's 7B coding model. Community sweet spot for local code generation and refactoring.",
+    "developer": "Alibaba",
+    "downloads": 600000,
+    "num_quants": 4,
+    "quants": [
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/Qwen2.5-Coder-7B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf",
+        "file_size": "4.68 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/Qwen2.5-Coder-7B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-7B-Instruct-Q5_K_M.gguf",
+        "file_size": "5.44 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/Qwen2.5-Coder-7B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-7B-Instruct-Q6_K.gguf",
+        "file_size": "6.25 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/Qwen2.5-Coder-7B-Instruct-Q8_0",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-7B-Instruct-Q8_0.gguf",
+        "file_size": "8.10 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-11-11T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+    "display_name": "Qwen 2.5 Coder 7B (MLX)",
+    "description": "MLX build of Qwen 2.5 Coder 7B for Apple Silicon.",
+    "developer": "Alibaba",
+    "downloads": 200000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+        "file_size": "4.30 GB"
+      },
+      {
+        "model_id": "mlx-community/Qwen2.5-Coder-7B-Instruct-8bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-8bit",
+        "file_size": "8.10 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2024-11-11T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Qwen2.5-Coder-32B-Instruct-GGUF",
+    "display_name": "Qwen 2.5 Coder 32B",
+    "description": "Alibaba's 32B coding model — best open dense coder. For workstation-class hardware.",
+    "developer": "Alibaba",
+    "downloads": 450000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-32B-Instruct-GGUF/Qwen2.5-Coder-32B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf",
+        "file_size": "19.85 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-32B-Instruct-GGUF/Qwen2.5-Coder-32B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-32B-Instruct-Q5_K_M.gguf",
+        "file_size": "23.26 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-Coder-32B-Instruct-GGUF/Qwen2.5-Coder-32B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-32B-Instruct-Q6_K.gguf",
+        "file_size": "26.89 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-11-11T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/Qwen2.5-Coder-32B-Instruct-4bit",
+    "display_name": "Qwen 2.5 Coder 32B (MLX)",
+    "description": "MLX build of Qwen 2.5 Coder 32B for Apple Silicon.",
+    "developer": "Alibaba",
+    "downloads": 120000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "mlx-community/Qwen2.5-Coder-32B-Instruct-4bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-32B-Instruct-4bit",
+        "file_size": "18.50 GB"
+      },
+      {
+        "model_id": "mlx-community/Qwen2.5-Coder-32B-Instruct-8bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-Coder-32B-Instruct-8bit",
+        "file_size": "34.80 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2024-11-11T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/phi-4-GGUF",
+    "display_name": "Phi-4 (14B)",
+    "description": "Microsoft's 14B dense reasoning model. Strong at math, logic, and structured problem solving.",
+    "developer": "Microsoft",
+    "downloads": 300000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/phi-4-GGUF/phi-4-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/phi-4-GGUF/resolve/main/phi-4-Q4_K_M.gguf",
+        "file_size": "8.43 GB"
+      },
+      {
+        "model_id": "bartowski/phi-4-GGUF/phi-4-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/phi-4-GGUF/resolve/main/phi-4-Q5_K_M.gguf",
+        "file_size": "10.02 GB"
+      },
+      {
+        "model_id": "bartowski/phi-4-GGUF/phi-4-Q6_K",
+        "path": "https://huggingface.co/bartowski/phi-4-GGUF/resolve/main/phi-4-Q6_K.gguf",
+        "file_size": "12.03 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-12-12T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/QwQ-32B-Preview-GGUF",
+    "display_name": "QwQ 32B Preview",
+    "description": "Qwen's 32B reasoning model — long chains of thought for hard problems.",
+    "developer": "Alibaba",
+    "downloads": 250000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/QwQ-32B-Preview-GGUF/QwQ-32B-Preview-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/QwQ-32B-Preview-GGUF/resolve/main/QwQ-32B-Preview-Q4_K_M.gguf",
+        "file_size": "19.85 GB"
+      },
+      {
+        "model_id": "bartowski/QwQ-32B-Preview-GGUF/QwQ-32B-Preview-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/QwQ-32B-Preview-GGUF/resolve/main/QwQ-32B-Preview-Q5_K_M.gguf",
+        "file_size": "23.26 GB"
+      },
+      {
+        "model_id": "bartowski/QwQ-32B-Preview-GGUF/QwQ-32B-Preview-Q6_K",
+        "path": "https://huggingface.co/bartowski/QwQ-32B-Preview-GGUF/resolve/main/QwQ-32B-Preview-Q6_K.gguf",
+        "file_size": "26.89 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-11-27T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/gemma-3-4b-it-GGUF",
+    "display_name": "Gemma 3 4B Instruct",
+    "description": "Google's multimodal small model — text + image input. Good for quick vision tasks and chat.",
+    "developer": "Google",
+    "downloads": 350000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/gemma-3-4b-it-GGUF/gemma-3-4b-it-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/gemma-3-4b-it-GGUF/resolve/main/gemma-3-4b-it-Q4_K_M.gguf",
+        "file_size": "2.49 GB"
+      },
+      {
+        "model_id": "bartowski/gemma-3-4b-it-GGUF/gemma-3-4b-it-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/gemma-3-4b-it-GGUF/resolve/main/gemma-3-4b-it-Q5_K_M.gguf",
+        "file_size": "2.83 GB"
+      },
+      {
+        "model_id": "bartowski/gemma-3-4b-it-GGUF/gemma-3-4b-it-Q6_K",
+        "path": "https://huggingface.co/bartowski/gemma-3-4b-it-GGUF/resolve/main/gemma-3-4b-it-Q6_K.gguf",
+        "file_size": "3.19 GB"
+      }
+    ],
+    "tools": true,
+    "vision": true,
+    "is_mlx": false,
+    "created_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/gemma-3-12b-it-GGUF",
+    "display_name": "Gemma 3 12B Instruct",
+    "description": "Google's mid-size multimodal model. Vision + strong writing + tool calling.",
+    "developer": "Google",
+    "downloads": 280000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/gemma-3-12b-it-GGUF/gemma-3-12b-it-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/gemma-3-12b-it-GGUF/resolve/main/gemma-3-12b-it-Q4_K_M.gguf",
+        "file_size": "7.30 GB"
+      },
+      {
+        "model_id": "bartowski/gemma-3-12b-it-GGUF/gemma-3-12b-it-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/gemma-3-12b-it-GGUF/resolve/main/gemma-3-12b-it-Q5_K_M.gguf",
+        "file_size": "8.44 GB"
+      },
+      {
+        "model_id": "bartowski/gemma-3-12b-it-GGUF/gemma-3-12b-it-Q6_K",
+        "path": "https://huggingface.co/bartowski/gemma-3-12b-it-GGUF/resolve/main/gemma-3-12b-it-Q6_K.gguf",
+        "file_size": "9.66 GB"
+      }
+    ],
+    "tools": true,
+    "vision": true,
+    "is_mlx": false,
+    "created_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/gemma-3-12b-it-4bit",
+    "display_name": "Gemma 3 12B Instruct (MLX)",
+    "description": "MLX build of Gemma 3 12B — multimodal on Apple Silicon.",
+    "developer": "Google",
+    "downloads": 90000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "mlx-community/gemma-3-12b-it-4bit",
+        "path": "https://huggingface.co/mlx-community/gemma-3-12b-it-4bit",
+        "file_size": "6.70 GB"
+      },
+      {
+        "model_id": "mlx-community/gemma-3-12b-it-8bit",
+        "path": "https://huggingface.co/mlx-community/gemma-3-12b-it-8bit",
+        "file_size": "12.50 GB"
+      }
+    ],
+    "tools": true,
+    "vision": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Qwen2.5-VL-7B-Instruct-GGUF",
+    "display_name": "Qwen 2.5 VL 7B",
+    "description": "Alibaba's vision-language model. Best open model for GUI understanding, OCR, and screenshot-based agents (computer use).",
+    "developer": "Alibaba",
+    "downloads": 420000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/Qwen2.5-VL-7B-Instruct-GGUF/Qwen2.5-VL-7B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-VL-7B-Instruct-GGUF/resolve/main/Qwen2.5-VL-7B-Instruct-Q4_K_M.gguf",
+        "file_size": "4.68 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-VL-7B-Instruct-GGUF/Qwen2.5-VL-7B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-VL-7B-Instruct-GGUF/resolve/main/Qwen2.5-VL-7B-Instruct-Q5_K_M.gguf",
+        "file_size": "5.44 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-VL-7B-Instruct-GGUF/Qwen2.5-VL-7B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-VL-7B-Instruct-GGUF/resolve/main/Qwen2.5-VL-7B-Instruct-Q6_K.gguf",
+        "file_size": "6.25 GB"
+      }
+    ],
+    "tools": true,
+    "vision": true,
+    "is_mlx": false,
+    "created_at": "2025-01-28T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
+    "display_name": "Qwen 2.5 VL 7B (MLX)",
+    "description": "MLX build of Qwen 2.5 VL 7B for Apple Silicon — fast vision model for computer-use agents.",
+    "developer": "Alibaba",
+    "downloads": 110000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-VL-7B-Instruct-4bit",
+        "file_size": "4.30 GB"
+      },
+      {
+        "model_id": "mlx-community/Qwen2.5-VL-7B-Instruct-8bit",
+        "path": "https://huggingface.co/mlx-community/Qwen2.5-VL-7B-Instruct-8bit",
+        "file_size": "8.10 GB"
+      }
+    ],
+    "tools": true,
+    "vision": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2025-01-28T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Qwen2.5-VL-32B-Instruct-GGUF",
+    "display_name": "Qwen 2.5 VL 32B",
+    "description": "Large vision-language model. Maximum accuracy for screenshot analysis, document understanding, and GUI agents.",
+    "developer": "Alibaba",
+    "downloads": 180000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "bartowski/Qwen2.5-VL-32B-Instruct-GGUF/Qwen2.5-VL-32B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-VL-32B-Instruct-GGUF/resolve/main/Qwen2.5-VL-32B-Instruct-Q4_K_M.gguf",
+        "file_size": "19.85 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-VL-32B-Instruct-GGUF/Qwen2.5-VL-32B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-VL-32B-Instruct-GGUF/resolve/main/Qwen2.5-VL-32B-Instruct-Q5_K_M.gguf",
+        "file_size": "23.26 GB"
+      }
+    ],
+    "tools": true,
+    "vision": true,
+    "is_mlx": false,
+    "created_at": "2025-03-24T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF",
+    "display_name": "DeepSeek Coder V2 Lite (16B MoE)",
+    "description": "DeepSeek's 16B MoE coding model (2.4B active per token). Uses Multi-head Latent Attention. Fast per-token throughput relative to size.",
+    "developer": "DeepSeek",
+    "downloads": 320000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF/resolve/main/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf",
+        "file_size": "10.36 GB"
+      },
+      {
+        "model_id": "bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF/DeepSeek-Coder-V2-Lite-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF/resolve/main/DeepSeek-Coder-V2-Lite-Instruct-Q5_K_M.gguf",
+        "file_size": "11.85 GB"
+      },
+      {
+        "model_id": "bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF/DeepSeek-Coder-V2-Lite-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF/resolve/main/DeepSeek-Coder-V2-Lite-Instruct-Q6_K.gguf",
+        "file_size": "14.07 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-07-30T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit",
+    "display_name": "DeepSeek Coder V2 Lite (MLX)",
+    "description": "MLX build of DeepSeek Coder V2 Lite — MoE on Apple Silicon.",
+    "developer": "DeepSeek",
+    "downloads": 70000,
+    "num_quants": 1,
+    "quants": [
+      {
+        "model_id": "mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit",
+        "path": "https://huggingface.co/mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit",
+        "file_size": "9.80 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2024-07-30T00:00:00Z"
+  },
+  {
+    "model_name": "bartowski/Qwen3-30B-A3B-Instruct-GGUF",
+    "display_name": "Qwen 3 30B A3B Instruct (MoE)",
+    "description": "Alibaba's 30B MoE model (3B active per token). General-purpose with strong tool calling — ideal for consumer GPUs with expert offload.",
+    "developer": "Alibaba",
+    "downloads": 400000,
+    "num_quants": 3,
+    "quants": [
+      {
+        "model_id": "bartowski/Qwen3-30B-A3B-Instruct-GGUF/Qwen3-30B-A3B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen3-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-30B-A3B-Instruct-Q4_K_M.gguf",
+        "file_size": "18.60 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen3-30B-A3B-Instruct-GGUF/Qwen3-30B-A3B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen3-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-30B-A3B-Instruct-Q5_K_M.gguf",
+        "file_size": "21.80 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen3-30B-A3B-Instruct-GGUF/Qwen3-30B-A3B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Qwen3-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-30B-A3B-Instruct-Q6_K.gguf",
+        "file_size": "25.20 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2025-04-28T00:00:00Z"
+  },
+  {
+    "model_name": "mlx-community/Qwen3-30B-A3B-Instruct-4bit",
+    "display_name": "Qwen 3 30B A3B Instruct (MLX)",
+    "description": "MLX build of Qwen 3 30B A3B MoE. Near-free expert offload on Apple Silicon thanks to unified memory.",
+    "developer": "Alibaba",
+    "downloads": 130000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "mlx-community/Qwen3-30B-A3B-Instruct-4bit",
+        "path": "https://huggingface.co/mlx-community/Qwen3-30B-A3B-Instruct-4bit",
+        "file_size": "17.20 GB"
+      },
+      {
+        "model_id": "mlx-community/Qwen3-30B-A3B-Instruct-8bit",
+        "path": "https://huggingface.co/mlx-community/Qwen3-30B-A3B-Instruct-8bit",
+        "file_size": "32.50 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": true,
+    "library_name": "mlx",
+    "created_at": "2025-04-28T00:00:00Z"
+  },
+  {
+    "model_name": "ggml-org/gpt-oss-20b-GGUF",
+    "display_name": "GPT-OSS 20B (MoE)",
+    "description": "OpenAI's permissively-licensed MoE model (~3.6B active per token). Apache 2.0.",
+    "developer": "OpenAI",
+    "downloads": 500000,
+    "num_quants": 2,
+    "quants": [
+      {
+        "model_id": "ggml-org/gpt-oss-20b-GGUF/gpt-oss-20b-Q4_K_M",
+        "path": "https://huggingface.co/ggml-org/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q4_K_M.gguf",
+        "file_size": "12.10 GB"
+      },
+      {
+        "model_id": "ggml-org/gpt-oss-20b-GGUF/gpt-oss-20b-Q8_0",
+        "path": "https://huggingface.co/ggml-org/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf",
+        "file_size": "22.30 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2025-08-05T00:00:00Z"
   }
 ]
