@@ -2,9 +2,13 @@
   {
     "model_name": "bartowski/Llama-3.2-3B-Instruct-GGUF",
     "display_name": "Llama 3.2 3B Instruct",
-    "description": "Meta's Llama 3.2 3B — compact general-purpose assistant. Good balance of speed and capability for most laptops.",
+    "description": "Meta's Llama 3.2 3B \u2014 compact general-purpose assistant. Good balance of speed and capability for most laptops.",
     "developer": "Meta",
-    "downloads": 500000,
+    "architecture": "dense",
+    "parameters": "3B",
+    "context_length": "128K",
+    "license": "Llama 3.2 Community License",
+    "downloads": 321139,
     "num_quants": 5,
     "quants": [
       {
@@ -41,15 +45,18 @@
       "general",
       "writing",
       "learning"
-    ],
-    "is_default": true
+    ]
   },
   {
     "model_name": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
     "display_name": "Llama 3.1 8B Instruct",
-    "description": "Meta's classic 8B instruct. Strong all-round explainer with broad world knowledge — a reliable choice for study help and learning new topics.",
+    "description": "Meta's classic 8B instruct. Strong all-round explainer with broad world knowledge \u2014 a reliable choice for study help and learning new topics.",
     "developer": "Meta",
-    "downloads": 850000,
+    "architecture": "dense",
+    "parameters": "8B",
+    "context_length": "128K",
+    "license": "Llama 3.1 Community License",
+    "downloads": 256178,
     "num_quants": 4,
     "quants": [
       {
@@ -89,7 +96,11 @@
     "display_name": "Llama 3.3 70B Instruct",
     "description": "Meta's flagship 70B dense. Near-frontier general-purpose quality for workstation-class hardware. Last open-weights Llama as of 2026-04 (no Llama 5).",
     "developer": "Meta",
-    "downloads": 350000,
+    "architecture": "dense",
+    "parameters": "70B",
+    "context_length": "128K",
+    "license": "Llama 3.3 Community License",
+    "downloads": 11388,
     "num_quants": 1,
     "quants": [
       {
@@ -104,6 +115,8 @@
     "tier": "xlarge",
     "use_cases": [
       "general",
+      "writing",
+      "coding",
       "research",
       "learning"
     ]
@@ -111,9 +124,13 @@
   {
     "model_name": "unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF",
     "display_name": "Llama 4 Scout 17B-16E",
-    "description": "Meta's first natively multimodal MoE — 109B total / 17B active across 16 experts, 10M context. Shipped here at Q2_K_L (the only single-file quant Unsloth publishes); higher quants are split-folder and the current downloader can't follow them.",
+    "description": "Meta's first natively multimodal MoE \u2014 109B total / 17B active across 16 experts, 10M context. Vision is fused into the encoder (no separate mmproj). Shipped here at Q2_K_L (the only single-file quant Unsloth publishes); higher quants are split-folder and the current downloader can't follow them.",
     "developer": "Meta",
-    "downloads": 200000,
+    "architecture": "MoE (109B total / 17B active, 16 experts)",
+    "parameters": "17B-A17B",
+    "context_length": "10M",
+    "license": "Llama 4 Community License",
+    "downloads": 35826,
     "num_quants": 1,
     "quants": [
       {
@@ -122,8 +139,8 @@
         "file_size": "39.80 GB"
       }
     ],
+    "vision_tokens": 256,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2025-04-05T00:00:00Z",
     "capabilities": [
@@ -133,6 +150,7 @@
     "tier": "xlarge",
     "use_cases": [
       "general",
+      "writing",
       "vision",
       "research"
     ]
@@ -140,9 +158,13 @@
   {
     "model_name": "bartowski/Qwen2.5-Coder-3B-Instruct-GGUF",
     "display_name": "Qwen 2.5 Coder 3B",
-    "description": "Alibaba's small dedicated coding model. Good for autocomplete and local coding assistance on modest hardware. No Qwen 3.5/3.6 Coder standalone exists yet — coding is folded into Qwen 3.6 27B / 35B-A3B.",
+    "description": "Alibaba's small dedicated coding model. Good for autocomplete and local coding assistance on modest hardware. No Qwen 3.5/3.6 Coder standalone exists yet \u2014 coding is folded into Qwen 3.6 27B / 35B-A3B.",
     "developer": "Alibaba",
-    "downloads": 180000,
+    "architecture": "dense",
+    "parameters": "3B",
+    "context_length": "32K",
+    "license": "Qwen License",
+    "downloads": 17567,
     "num_quants": 4,
     "quants": [
       {
@@ -182,7 +204,11 @@
     "display_name": "Qwen 2.5 Coder 7B",
     "description": "Alibaba's 7B dedicated coding model. Community sweet spot for local code generation and refactoring at medium hardware tier.",
     "developer": "Alibaba",
-    "downloads": 600000,
+    "architecture": "dense",
+    "parameters": "7B",
+    "context_length": "128K",
+    "license": "Qwen License",
+    "downloads": 514479,
     "num_quants": 4,
     "quants": [
       {
@@ -222,7 +248,11 @@
     "display_name": "Qwen 2.5 Coder 32B",
     "description": "Alibaba's 32B dedicated coding dense model. Still a strong large-tier coder for workstation hardware; outperformed only by Qwen 3.6 27B / 35B-A3B which fold coding into general-purpose models.",
     "developer": "Alibaba",
-    "downloads": 450000,
+    "architecture": "dense",
+    "parameters": "32B",
+    "context_length": "128K",
+    "license": "Qwen License",
+    "downloads": 19193,
     "num_quants": 3,
     "quants": [
       {
@@ -257,7 +287,11 @@
     "display_name": "Qwen 3 14B",
     "description": "Alibaba's mid-tier Qwen 3 dense reasoning model with 128K context and hybrid thinking. Bridges the gap between Qwen 3.5 9B and Qwen 3.6 27B.",
     "developer": "Alibaba",
-    "downloads": 240000,
+    "architecture": "dense",
+    "parameters": "14B",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 6223,
     "num_quants": 1,
     "quants": [
       {
@@ -276,16 +310,21 @@
     "use_cases": [
       "general",
       "writing",
+      "coding",
       "research",
-      "coding"
+      "learning"
     ]
   },
   {
     "model_name": "unsloth/Qwen3.5-2B-GGUF",
     "display_name": "Qwen 3.5 2B",
-    "description": "Alibaba's compact 2B vision-language model with 256K context. Fits under 1.3 GB at Q4 with vision projector available.",
+    "description": "Alibaba's compact 2B vision-language model with 256K context. Fits under 1.3 GB at Q4 with vision projector available. Catalog's lone minimal-tier entry and the universal fallback for low-RAM machines.",
     "developer": "Alibaba",
-    "downloads": 90000,
+    "architecture": "dense",
+    "parameters": "2B",
+    "context_length": "256K",
+    "license": "Apache-2.0",
+    "downloads": 314394,
     "num_quants": 1,
     "quants": [
       {
@@ -294,8 +333,16 @@
         "file_size": "1.28 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/Qwen3.5-2B-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "0.66 GB"
+      }
+    ],
+    "vision_tokens": 576,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-03-02T00:00:00Z",
     "capabilities": [
@@ -307,6 +354,11 @@
       "writing",
       "vision",
       "learning"
+    ],
+    "is_default": true,
+    "supersedes": [
+      "bartowski/Qwen_Qwen3-1.7B-GGUF",
+      "bartowski/Llama-3.2-1B-Instruct-GGUF"
     ]
   },
   {
@@ -314,7 +366,11 @@
     "display_name": "Qwen 3.5 4B",
     "description": "Alibaba's 4B dense vision-language model with thinking modes and 256K context. Fits 4 GB Macs with vision support.",
     "developer": "Alibaba",
-    "downloads": 130000,
+    "architecture": "dense",
+    "parameters": "4B",
+    "context_length": "256K",
+    "license": "Apache-2.0",
+    "downloads": 608360,
     "num_quants": 1,
     "quants": [
       {
@@ -323,8 +379,16 @@
         "file_size": "2.74 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/Qwen3.5-4B-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "0.67 GB"
+      }
+    ],
+    "vision_tokens": 576,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-03-02T00:00:00Z",
     "capabilities": [
@@ -337,6 +401,9 @@
       "writing",
       "vision",
       "learning"
+    ],
+    "supersedes": [
+      "bartowski/Qwen_Qwen3-4B-GGUF"
     ]
   },
   {
@@ -344,7 +411,11 @@
     "display_name": "Qwen 3.5 9B",
     "description": "Alibaba's edge-friendly 9B dense vision-language model with 256K context and hybrid thinking. Best general medium-tier pick from the Qwen 3.5 family.",
     "developer": "Alibaba",
-    "downloads": 200000,
+    "architecture": "dense",
+    "parameters": "9B",
+    "context_length": "256K",
+    "license": "Apache-2.0",
+    "downloads": 967748,
     "num_quants": 1,
     "quants": [
       {
@@ -353,8 +424,16 @@
         "file_size": "5.68 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/Qwen3.5-9B-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "0.92 GB"
+      }
+    ],
+    "vision_tokens": 576,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-03-02T00:00:00Z",
     "capabilities": [
@@ -365,9 +444,15 @@
     "use_cases": [
       "general",
       "writing",
+      "coding",
       "vision",
       "research",
       "learning"
+    ],
+    "supersedes": [
+      "bartowski/Qwen_Qwen3-8B-GGUF",
+      "bartowski/Qwen2.5-7B-Instruct-GGUF",
+      "ggml-org/Qwen2.5-VL-7B-Instruct-GGUF"
     ]
   },
   {
@@ -375,7 +460,11 @@
     "display_name": "Qwen 3.6 27B",
     "description": "Alibaba's flagship dense 27B with vision. Outperforms their own 397B MoE on agentic coding (SWE-bench Pro 53.5) and matches Claude 4.5 Opus on Terminal-Bench 2.0. Strong all-rounder.",
     "developer": "Alibaba",
-    "downloads": 180000,
+    "architecture": "dense (Gated DeltaNet + Gated Attention hybrid)",
+    "parameters": "27B",
+    "context_length": "256K",
+    "license": "Apache-2.0",
+    "downloads": 702161,
     "num_quants": 1,
     "quants": [
       {
@@ -384,8 +473,16 @@
         "file_size": "16.80 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/Qwen3.6-27B-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/Qwen3.6-27B-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "0.93 GB"
+      }
+    ],
+    "vision_tokens": 576,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-04-22T00:00:00Z",
     "capabilities": [
@@ -399,15 +496,25 @@
       "writing",
       "coding",
       "vision",
-      "research"
+      "research",
+      "learning"
+    ],
+    "supersedes": [
+      "bartowski/Qwen_Qwen3-32B-GGUF",
+      "bartowski/Qwen_Qwen3-VL-32B-Instruct-GGUF",
+      "ggml-org/Qwen2.5-VL-32B-Instruct-GGUF"
     ]
   },
   {
     "model_name": "unsloth/Qwen3.6-35B-A3B-GGUF",
     "display_name": "Qwen 3.6 35B-A3B (MoE)",
-    "description": "Alibaba's sparse MoE vision-language model with only 3B active per token — runs at small-model speeds with frontier reasoning quality. SWE-bench Verified 73.4%, AIME 2026 92.7%.",
+    "description": "Alibaba's sparse MoE vision-language model with only 3B active per token \u2014 runs at small-model speeds with frontier reasoning quality. SWE-bench Verified 73.4%, AIME 2026 92.7%.",
     "developer": "Alibaba",
-    "downloads": 220000,
+    "architecture": "MoE (35B total / 3B active, 256 experts, 8 routed + 1 shared)",
+    "parameters": "35B-A3B",
+    "context_length": "256K",
+    "license": "Apache-2.0",
+    "downloads": 1705737,
     "num_quants": 1,
     "quants": [
       {
@@ -416,8 +523,16 @@
         "file_size": "22.10 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/Qwen3.6-35B-A3B-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "0.90 GB"
+      }
+    ],
+    "vision_tokens": 576,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-04-16T00:00:00Z",
     "capabilities": [
@@ -432,7 +547,12 @@
       "writing",
       "coding",
       "vision",
-      "research"
+      "research",
+      "learning"
+    ],
+    "supersedes": [
+      "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+      "lmstudio-community/Qwen3-30B-A3B-Instruct-2507-GGUF"
     ]
   },
   {
@@ -440,7 +560,11 @@
     "display_name": "Qwen QwQ 32B",
     "description": "Alibaba's 32B dense reasoning model trained with reinforcement learning. Matches DeepSeek R1 on math and code at ~5% of the parameters; the original `<think>`-style chain-of-thought specialist.",
     "developer": "Alibaba",
-    "downloads": 320000,
+    "architecture": "dense",
+    "parameters": "32B",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 3923,
     "num_quants": 1,
     "quants": [
       {
@@ -462,43 +586,15 @@
     ]
   },
   {
-    "model_name": "lmstudio-community/Qwen3-235B-A22B-Instruct-2507-GGUF",
-    "display_name": "Qwen 3 235B A22B Instruct 2507 (MoE)",
-    "description": "Alibaba's flagship MoE — 235B total, 22B active per token. Frontier-quality at Q3 on 128 GB MacBooks. Now superseded in agentic coding by the smaller Qwen 3.6 27B dense.",
-    "developer": "Alibaba",
-    "downloads": 220000,
-    "num_quants": 2,
-    "quants": [
-      {
-        "model_id": "lmstudio-community/Qwen3-235B-A22B-Instruct-2507-GGUF/Qwen3-235B-A22B-Instruct-2507-Q3_K_S",
-        "path": "https://huggingface.co/lmstudio-community/Qwen3-235B-A22B-Instruct-2507-GGUF/resolve/main/Qwen3-235B-A22B-Instruct-2507-Q3_K_S.gguf",
-        "file_size": "100.21 GB"
-      },
-      {
-        "model_id": "lmstudio-community/Qwen3-235B-A22B-Instruct-2507-GGUF/Qwen3-235B-A22B-Instruct-2507-Q3_K_M",
-        "path": "https://huggingface.co/lmstudio-community/Qwen3-235B-A22B-Instruct-2507-GGUF/resolve/main/Qwen3-235B-A22B-Instruct-2507-Q3_K_M.gguf",
-        "file_size": "112.49 GB"
-      }
-    ],
-    "tools": true,
-    "is_mlx": false,
-    "created_at": "2025-07-21T00:00:00Z",
-    "capabilities": [
-      "MoE"
-    ],
-    "tier": "xlarge",
-    "use_cases": [
-      "general",
-      "research",
-      "coding"
-    ]
-  },
-  {
     "model_name": "bartowski/Mistral-Nemo-Instruct-2407-GGUF",
     "display_name": "Mistral Nemo 12B Instruct",
-    "description": "Mistral × NVIDIA collaboration. 12B with a 128K context window and strong multilingual coverage — works through long materials without losing the thread.",
+    "description": "Mistral \u00d7 NVIDIA collaboration. 12B with a 128K context window and strong multilingual coverage \u2014 works through long materials without losing the thread.",
     "developer": "Mistral AI",
-    "downloads": 420000,
+    "architecture": "dense",
+    "parameters": "12B",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 24016,
     "num_quants": 4,
     "quants": [
       {
@@ -537,7 +633,11 @@
     "display_name": "Mistral Small 3 (24B)",
     "description": "Mistral's 24B general-purpose model. Apache 2.0. Excellent at writing, multi-turn chat, and tool use.",
     "developer": "Mistral AI",
-    "downloads": 250000,
+    "architecture": "dense",
+    "parameters": "24B",
+    "context_length": "32K",
+    "license": "Apache-2.0",
+    "downloads": 7303,
     "num_quants": 3,
     "quants": [
       {
@@ -563,6 +663,7 @@
     "use_cases": [
       "general",
       "writing",
+      "coding",
       "research",
       "learning"
     ]
@@ -572,7 +673,11 @@
     "display_name": "Phi-4 (14B)",
     "description": "Microsoft's 14B dense reasoning model. Strong at math, logic, and structured problem solving.",
     "developer": "Microsoft",
-    "downloads": 300000,
+    "architecture": "dense",
+    "parameters": "14B",
+    "context_length": "16K",
+    "license": "MIT",
+    "downloads": 8297,
     "num_quants": 3,
     "quants": [
       {
@@ -599,17 +704,22 @@
     ],
     "tier": "medium",
     "use_cases": [
-      "research",
       "general",
+      "coding",
+      "research",
       "learning"
     ]
   },
   {
     "model_name": "ggml-org/gemma-3-12b-it-GGUF",
     "display_name": "Gemma 3 12B Instruct",
-    "description": "Google's Gemma 3 mid-size multimodal model. Vision + strong writing + tool calling. Kept as the only Gemma in the 12B class — Gemma 4 jumps from E4B (5B effective) straight to 26B-A4B and 31B.",
+    "description": "Google's Gemma 3 mid-size multimodal model. Vision + strong writing + tool calling. Kept as the only Gemma in the 12B class \u2014 Gemma 4 jumps from E4B (5B effective) straight to 26B-A4B and 31B.",
     "developer": "Google",
-    "downloads": 280000,
+    "architecture": "dense",
+    "parameters": "12B",
+    "context_length": "128K",
+    "license": "Gemma Terms of Use",
+    "downloads": 2294,
     "num_quants": 2,
     "quants": [
       {
@@ -623,8 +733,16 @@
         "file_size": "12.87 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "ggml-org/gemma-3-12b-it-GGUF/mmproj-model-f16",
+        "path": "https://huggingface.co/ggml-org/gemma-3-12b-it-GGUF/resolve/main/mmproj-model-f16.gguf",
+        "file_size": "0.85 GB"
+      }
+    ],
+    "vision_tokens": 256,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2025-03-12T00:00:00Z",
     "capabilities": [
@@ -632,17 +750,22 @@
     ],
     "tier": "medium",
     "use_cases": [
-      "vision",
+      "general",
       "writing",
-      "general"
+      "vision",
+      "learning"
     ]
   },
   {
     "model_name": "ggml-org/gemma-4-E2B-it-GGUF",
     "display_name": "Gemma 4 E2B Instruct",
-    "description": "Google's tiniest Gemma 4 — 2.3B effective with vision and audio input. Designed for on-device inference; only Q8_0 ships at this size, not Q4.",
+    "description": "Google's tiniest Gemma 4 \u2014 2.3B effective with vision and audio input. Designed for on-device inference; only Q8_0 ships at this size, not Q4.",
     "developer": "Google",
-    "downloads": 120000,
+    "architecture": "dense (Per-Layer Embeddings)",
+    "parameters": "5.1B total / 2.3B effective",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 130545,
     "num_quants": 1,
     "quants": [
       {
@@ -651,8 +774,16 @@
         "file_size": "4.97 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "ggml-org/gemma-4-E2B-it-GGUF/mmproj-gemma-4-E2B-it-Q8_0",
+        "path": "https://huggingface.co/ggml-org/gemma-4-E2B-it-GGUF/resolve/main/mmproj-gemma-4-E2B-it-Q8_0.gguf",
+        "file_size": "0.56 GB"
+      }
+    ],
+    "vision_tokens": 256,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-04-02T00:00:00Z",
     "capabilities": [
@@ -663,14 +794,21 @@
       "general",
       "vision",
       "learning"
+    ],
+    "supersedes": [
+      "bartowski/google_gemma-3-1b-it-GGUF"
     ]
   },
   {
     "model_name": "ggml-org/gemma-4-E4B-it-GGUF",
     "display_name": "Gemma 4 E4B Instruct",
-    "description": "Google's edge-flagship 8B (4.5B effective) — vision + audio in, 140-language pretraining, Apache-2.0. Replaces Gemma 3 4B.",
+    "description": "Google's edge-flagship 8B (4.5B effective) \u2014 vision + audio in, 140-language pretraining, Apache-2.0. Replaces Gemma 3 4B.",
     "developer": "Google",
-    "downloads": 180000,
+    "architecture": "dense (Per-Layer Embeddings)",
+    "parameters": "8B total / 4.5B effective",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 217884,
     "num_quants": 1,
     "quants": [
       {
@@ -679,8 +817,16 @@
         "file_size": "5.34 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "ggml-org/gemma-4-E4B-it-GGUF/mmproj-gemma-4-E4B-it-Q8_0",
+        "path": "https://huggingface.co/ggml-org/gemma-4-E4B-it-GGUF/resolve/main/mmproj-gemma-4-E4B-it-Q8_0.gguf",
+        "file_size": "0.56 GB"
+      }
+    ],
+    "vision_tokens": 256,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-04-02T00:00:00Z",
     "capabilities": [
@@ -693,14 +839,22 @@
       "writing",
       "vision",
       "learning"
+    ],
+    "supersedes": [
+      "ggml-org/gemma-3-4b-it-GGUF",
+      "bartowski/google_gemma-3-4b-it-GGUF"
     ]
   },
   {
     "model_name": "unsloth/gemma-4-26B-A4B-it-GGUF",
     "display_name": "Gemma 4 26B-A4B (MoE)",
-    "description": "Google's Gemma 4 MoE — 3.8B active per token, 256K context, near-31B quality at 4B-class speed. Best speed/quality trade in the family.",
+    "description": "Google's Gemma 4 MoE \u2014 3.8B active per token, 256K context, near-31B quality at 4B-class speed. Best speed/quality trade in the family.",
     "developer": "Google",
-    "downloads": 140000,
+    "architecture": "MoE (25.2B total / 3.8B active, 128 experts)",
+    "parameters": "26B-A4B",
+    "context_length": "256K",
+    "license": "Apache-2.0",
+    "downloads": 3234227,
     "num_quants": 1,
     "quants": [
       {
@@ -709,8 +863,16 @@
         "file_size": "16.90 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/gemma-4-26B-A4B-it-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "1.19 GB"
+      }
+    ],
+    "vision_tokens": 256,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-04-02T00:00:00Z",
     "capabilities": [
@@ -722,17 +884,23 @@
     "tier": "large",
     "use_cases": [
       "general",
+      "writing",
       "coding",
       "vision",
-      "research"
+      "research",
+      "learning"
     ]
   },
   {
     "model_name": "unsloth/gemma-4-31B-it-GGUF",
     "display_name": "Gemma 4 31B Instruct",
-    "description": "Google's flagship dense Gemma 4 — top-3 open model on Arena, 256K context, Apache-2.0. Replaces Gemma 3 27B with stronger coding and reasoning.",
+    "description": "Google's flagship dense Gemma 4 \u2014 top-3 open model on Arena, 256K context, Apache-2.0. Replaces Gemma 3 27B with stronger coding and reasoning.",
     "developer": "Google",
-    "downloads": 200000,
+    "architecture": "dense",
+    "parameters": "31B",
+    "context_length": "256K",
+    "license": "Apache-2.0",
+    "downloads": 2001229,
     "num_quants": 1,
     "quants": [
       {
@@ -741,8 +909,16 @@
         "file_size": "18.30 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/gemma-4-31B-it-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "1.20 GB"
+      }
+    ],
+    "vision_tokens": 256,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2026-04-02T00:00:00Z",
     "capabilities": [
@@ -756,7 +932,12 @@
       "writing",
       "coding",
       "vision",
-      "research"
+      "research",
+      "learning"
+    ],
+    "supersedes": [
+      "bartowski/google_gemma-3-27b-it-GGUF",
+      "bartowski/gemma-2-27b-it-GGUF"
     ]
   },
   {
@@ -764,7 +945,11 @@
     "display_name": "DeepSeek Coder V2 Lite (16B MoE)",
     "description": "DeepSeek's 16B MoE coding model (2.4B active per token). Uses Multi-head Latent Attention. Fast per-token throughput relative to size.",
     "developer": "DeepSeek",
-    "downloads": 320000,
+    "architecture": "MoE (16B total / 2.4B active)",
+    "parameters": "16B-A2.4B",
+    "context_length": "128K",
+    "license": "DeepSeek License",
+    "downloads": 63406,
     "num_quants": 3,
     "quants": [
       {
@@ -800,7 +985,11 @@
     "display_name": "DeepSeek R1 Distill 1.5B",
     "description": "DeepSeek's smallest distilled reasoner on a 1.5B Qwen base. Surprisingly strong at competition math for its size; a tiny chain-of-thought specialist.",
     "developer": "DeepSeek",
-    "downloads": 380000,
+    "architecture": "dense (Qwen2.5-Math-1.5B base)",
+    "parameters": "1.5B",
+    "context_length": "128K",
+    "license": "MIT",
+    "downloads": 16611,
     "num_quants": 1,
     "quants": [
       {
@@ -824,9 +1013,13 @@
   {
     "model_name": "bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF",
     "display_name": "DeepSeek R1 Distill 7B",
-    "description": "DeepSeek's 7B distilled reasoner. Surpasses GPT-4o on AIME at under 5 GB — best small-footprint pick for math and code chains.",
+    "description": "DeepSeek's 7B distilled reasoner. Surpasses GPT-4o on AIME at under 5 GB \u2014 best small-footprint pick for math and code chains.",
     "developer": "DeepSeek",
-    "downloads": 420000,
+    "architecture": "dense (Qwen2.5-Math-7B base)",
+    "parameters": "7B",
+    "context_length": "128K",
+    "license": "MIT",
+    "downloads": 40164,
     "num_quants": 1,
     "quants": [
       {
@@ -844,7 +1037,8 @@
     "tier": "medium",
     "use_cases": [
       "research",
-      "coding"
+      "coding",
+      "learning"
     ]
   },
   {
@@ -852,7 +1046,11 @@
     "display_name": "DeepSeek R1 Distill Llama 8B",
     "description": "DeepSeek's R1 distilled into Llama 3.1 8B. Cleaner English style than the Qwen-based distills, slightly behind on math.",
     "developer": "DeepSeek",
-    "downloads": 360000,
+    "architecture": "dense (Llama 3.1 8B base)",
+    "parameters": "8B",
+    "context_length": "128K",
+    "license": "MIT (Llama 3 license also applies)",
+    "downloads": 11035,
     "num_quants": 1,
     "quants": [
       {
@@ -869,7 +1067,8 @@
     ],
     "tier": "medium",
     "use_cases": [
-      "research"
+      "research",
+      "coding"
     ]
   },
   {
@@ -877,7 +1076,11 @@
     "display_name": "DeepSeek R1 Distill 14B",
     "description": "DeepSeek's distilled reasoning model based on Qwen 14B. Lower hardware cost than the 32B version with most of the chain-of-thought quality.",
     "developer": "DeepSeek",
-    "downloads": 340000,
+    "architecture": "dense (Qwen2.5-14B base)",
+    "parameters": "14B",
+    "context_length": "128K",
+    "license": "MIT",
+    "downloads": 40819,
     "num_quants": 1,
     "quants": [
       {
@@ -895,7 +1098,8 @@
     "tier": "medium",
     "use_cases": [
       "research",
-      "coding"
+      "coding",
+      "learning"
     ]
   },
   {
@@ -903,7 +1107,11 @@
     "display_name": "DeepSeek R1 Distill Qwen 32B",
     "description": "DeepSeek's reasoning trace distilled into Qwen 2.5 32B. Long chain-of-thought, strong at math and code reasoning. MIT licensed.",
     "developer": "DeepSeek",
-    "downloads": 280000,
+    "architecture": "dense (Qwen2.5-32B base)",
+    "parameters": "32B",
+    "context_length": "128K",
+    "license": "MIT",
+    "downloads": 16851,
     "num_quants": 3,
     "quants": [
       {
@@ -940,7 +1148,11 @@
     "display_name": "DeepSeek R1 Distill Llama 70B",
     "description": "DeepSeek's reasoning trace distilled into Llama 3.3 70B. Best open-weights large reasoning model that fits a 64+ GB MacBook. MIT licensed.",
     "developer": "DeepSeek",
-    "downloads": 320000,
+    "architecture": "dense (Llama 3.3 70B base)",
+    "parameters": "70B",
+    "context_length": "128K",
+    "license": "MIT (Llama 3 license also applies)",
+    "downloads": 18504,
     "num_quants": 1,
     "quants": [
       {
@@ -967,7 +1179,11 @@
     "display_name": "MiMo 7B RL",
     "description": "Xiaomi's first open-source reasoning LLM. A 7B trained from scratch for math and code that matches o1-mini and beats QwQ-32B-Preview on LiveCodeBench v6. MiMo's V2/V2.5 successors are all >300B and don't fit locally.",
     "developer": "Xiaomi",
-    "downloads": 60000,
+    "architecture": "dense",
+    "parameters": "7B",
+    "context_length": "32K",
+    "license": "MIT",
+    "downloads": 1085,
     "num_quants": 1,
     "quants": [
       {
@@ -991,9 +1207,13 @@
   {
     "model_name": "unsloth/MiMo-VL-7B-RL-GGUF",
     "display_name": "MiMo VL 7B RL",
-    "description": "Xiaomi's vision-language MiMo. Pairs a native-resolution ViT with the MiMo-7B reasoner — strong on multimodal reasoning and OCR for its size.",
+    "description": "Xiaomi's vision-language MiMo. Pairs a native-resolution ViT with the MiMo-7B reasoner \u2014 strong on multimodal reasoning and OCR for its size.",
     "developer": "Xiaomi",
-    "downloads": 50000,
+    "architecture": "dense (ViT + MiMo-7B)",
+    "parameters": "7B",
+    "context_length": "32K",
+    "license": "MIT",
+    "downloads": 5846,
     "num_quants": 1,
     "quants": [
       {
@@ -1002,8 +1222,16 @@
         "file_size": "4.36 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "unsloth/MiMo-VL-7B-RL-GGUF/mmproj-F16",
+        "path": "https://huggingface.co/unsloth/MiMo-VL-7B-RL-GGUF/resolve/main/mmproj-F16.gguf",
+        "file_size": "1.37 GB"
+      }
+    ],
+    "vision_tokens": 576,
     "tools": false,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2025-06-02T00:00:00Z",
     "capabilities": [
@@ -1021,7 +1249,11 @@
     "display_name": "GPT-OSS 20B (MoE)",
     "description": "OpenAI's permissively-licensed MoE model (~3.6B active per token). Apache 2.0. Natively released in MXFP4; bartowski re-quants cover the standard k-quant scheme.",
     "developer": "OpenAI",
-    "downloads": 500000,
+    "architecture": "MoE (21B total / 3.6B active)",
+    "parameters": "21B-A3.6B",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 8623,
     "num_quants": 3,
     "quants": [
       {
@@ -1050,15 +1282,20 @@
     "tier": "large",
     "use_cases": [
       "general",
+      "coding",
       "research"
     ]
   },
   {
     "model_name": "unsloth/gpt-oss-safeguard-20b-GGUF",
     "display_name": "GPT-OSS Safeguard 20B",
-    "description": "OpenAI's policy-reasoning fork of gpt-oss-20B (released Oct 2025). Reads a policy at inference time and classifies content with chain-of-thought rationale — specialist, not a general chat replacement.",
+    "description": "OpenAI's policy-reasoning fork of gpt-oss-20B (released Oct 2025). Reads a policy at inference time and classifies content with chain-of-thought rationale \u2014 specialist, not a general chat replacement.",
     "developer": "OpenAI",
-    "downloads": 90000,
+    "architecture": "MoE (21B total / 3.6B active)",
+    "parameters": "21B-A3.6B",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 1208,
     "num_quants": 1,
     "quants": [
       {
@@ -1082,9 +1319,13 @@
   {
     "model_name": "unsloth/gpt-oss-120b-GGUF",
     "display_name": "GPT-OSS 120B (MoE)",
-    "description": "OpenAI's flagship open MoE — 117B total / 5.1B active per token, 128K context, near-parity with o4-mini reasoning. Apache 2.0. Shipped here as the F16 single file (65 GB) — the only single-file Unsloth quant; lower k-quants are all split-folder.",
+    "description": "OpenAI's flagship open MoE \u2014 117B total / 5.1B active per token, 128K context, near-parity with o4-mini reasoning. Apache 2.0. Shipped here as the F16 single file (65 GB) \u2014 the only single-file Unsloth quant; lower k-quants are all split-folder.",
     "developer": "OpenAI",
-    "downloads": 220000,
+    "architecture": "MoE (117B total / 5.1B active)",
+    "parameters": "117B-A5.1B",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 238726,
     "num_quants": 1,
     "quants": [
       {
@@ -1104,8 +1345,10 @@
     "tier": "xlarge",
     "use_cases": [
       "general",
+      "writing",
       "coding",
-      "research"
+      "research",
+      "learning"
     ]
   },
   {
@@ -1113,7 +1356,11 @@
     "display_name": "Kimi-VL A3B Thinking",
     "description": "Moonshot's vision-language MoE with 16B total / 3B active params. Strong long-context multimodal reasoning with thinking mode.",
     "developer": "Moonshot",
-    "downloads": 80000,
+    "architecture": "MoE (16B total / 3B active, MoonViT)",
+    "parameters": "16B-A3B",
+    "context_length": "128K",
+    "license": "MIT",
+    "downloads": 1123,
     "num_quants": 1,
     "quants": [
       {
@@ -1122,8 +1369,16 @@
         "file_size": "10.50 GB"
       }
     ],
+    "num_mmproj": 1,
+    "mmproj_models": [
+      {
+        "model_id": "ggml-org/Kimi-VL-A3B-Thinking-2506-GGUF/mmproj-Kimi-VL-A3B-Thinking-2506-Q8_0",
+        "path": "https://huggingface.co/ggml-org/Kimi-VL-A3B-Thinking-2506-GGUF/resolve/main/mmproj-Kimi-VL-A3B-Thinking-2506-Q8_0.gguf",
+        "file_size": "0.62 GB"
+      }
+    ],
+    "vision_tokens": 256,
     "tools": true,
-    "vision": true,
     "is_mlx": false,
     "created_at": "2025-06-19T00:00:00Z",
     "capabilities": [
@@ -1141,9 +1396,13 @@
   {
     "model_name": "ymcki/Kimi-Linear-48B-A3B-Instruct-GGUF",
     "display_name": "Kimi Linear 48B-A3B",
-    "description": "Moonshot's hybrid linear-attention MoE — 48B total / 3B active, 1M native context with Kimi Delta Attention. 6× faster decoding on long inputs than dense peers.",
+    "description": "Moonshot's hybrid linear-attention MoE \u2014 48B total / 3B active, 1M native context with Kimi Delta Attention. 6\u00d7 faster decoding on long inputs than dense peers.",
     "developer": "Moonshot",
-    "downloads": 40000,
+    "architecture": "MoE (48B total / 3B active, Kimi Delta Attention 3:1 KDA-to-MLA hybrid)",
+    "parameters": "48B-A3B",
+    "context_length": "1M",
+    "license": "MIT",
+    "downloads": 530,
     "num_quants": 1,
     "quants": [
       {
@@ -1162,8 +1421,10 @@
     "tier": "large",
     "use_cases": [
       "general",
+      "writing",
+      "coding",
       "research",
-      "coding"
+      "learning"
     ]
   },
   {
@@ -1171,7 +1432,11 @@
     "display_name": "GLM Z1 9B",
     "description": "Z.ai's 9B reasoning-tuned chat model with deep-thinking mode and tool calling. Strong math and logic at medium-tier footprint.",
     "developer": "Z.ai",
-    "downloads": 70000,
+    "architecture": "dense",
+    "parameters": "9B",
+    "context_length": "32K",
+    "license": "MIT",
+    "downloads": 1093,
     "num_quants": 1,
     "quants": [
       {
@@ -1188,10 +1453,10 @@
     ],
     "tier": "medium",
     "use_cases": [
-      "research",
-      "learning",
       "general",
-      "coding"
+      "coding",
+      "research",
+      "learning"
     ]
   },
   {
@@ -1199,7 +1464,11 @@
     "display_name": "GLM 4 32B",
     "description": "Z.ai's 32B dense chat model with strong code generation and JSON tool calling, comparable to GPT-4o-class on IFEval and BFCL.",
     "developer": "Z.ai",
-    "downloads": 110000,
+    "architecture": "dense",
+    "parameters": "32B",
+    "context_length": "32K",
+    "license": "MIT",
+    "downloads": 1347,
     "num_quants": 1,
     "quants": [
       {
@@ -1217,18 +1486,23 @@
     ],
     "tier": "large",
     "use_cases": [
-      "coding",
       "general",
+      "writing",
+      "coding",
       "research",
-      "writing"
+      "learning"
     ]
   },
   {
     "model_name": "bartowski/zai-org_GLM-4.7-Flash-GGUF",
     "display_name": "GLM 4.7 Flash (30B-A3B MoE)",
-    "description": "Z.ai's 30B-A3B MoE with Preserved Thinking — punches at 30B-class dense quality with ~3B active per token. Replaces GLM-4.5 Air. AIME 2025 91.6, SWE-bench Verified 59.2.",
+    "description": "Z.ai's 30B-A3B MoE with Preserved Thinking \u2014 punches at 30B-class dense quality with ~3B active per token. Replaces GLM-4.5 Air. AIME 2025 91.6, SWE-bench Verified 59.2.",
     "developer": "Z.ai",
-    "downloads": 95000,
+    "architecture": "MoE (30B total / 3B active, glm4_moe lite)",
+    "parameters": "30B-A3B",
+    "context_length": "131K",
+    "license": "MIT",
+    "downloads": 8515,
     "num_quants": 1,
     "quants": [
       {
@@ -1248,9 +1522,13 @@
     "tier": "large",
     "use_cases": [
       "general",
+      "writing",
       "coding",
       "research",
-      "writing"
+      "learning"
+    ],
+    "supersedes": [
+      "unsloth/GLM-4.5-Air-GGUF"
     ]
   }
 ]
