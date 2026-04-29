@@ -1282,8 +1282,10 @@
     "tier": "large",
     "use_cases": [
       "general",
+      "writing",
       "coding",
-      "research"
+      "research",
+      "learning"
     ]
   },
   {
