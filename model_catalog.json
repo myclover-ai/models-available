@@ -244,6 +244,50 @@
     ]
   },
   {
+    "model_name": "bartowski/Qwen2.5-7B-Instruct-GGUF",
+    "display_name": "Qwen 2.5 7B Instruct",
+    "description": "Alibaba's general-purpose 7B. Strong instruction following and tool calling across many languages. Superseded by Qwen 3 8B for most workloads but kept for compatibility.",
+    "developer": "Alibaba",
+    "architecture": "dense",
+    "parameters": "7B",
+    "context_length": "128K",
+    "license": "Apache-2.0",
+    "downloads": 400000,
+    "num_quants": 4,
+    "quants": [
+      {
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+        "file_size": "4.68 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q5_K_M",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q5_K_M.gguf",
+        "file_size": "5.44 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q6_K",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q6_K.gguf",
+        "file_size": "6.25 GB"
+      },
+      {
+        "model_id": "bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q8_0",
+        "path": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q8_0.gguf",
+        "file_size": "8.10 GB"
+      }
+    ],
+    "tools": true,
+    "is_mlx": false,
+    "created_at": "2024-09-19T00:00:00Z",
+    "tier": "medium",
+    "use_cases": [
+      "general",
+      "writing",
+      "research",
+      "learning"
+    ]
+  },
+  {
     "model_name": "bartowski/Qwen2.5-Coder-32B-Instruct-GGUF",
     "display_name": "Qwen 2.5 Coder 32B",
     "description": "Alibaba's 32B dedicated coding dense model. Still a strong large-tier coder for workstation hardware; outperformed only by Qwen 3.6 27B / 35B-A3B which fold coding into general-purpose models.",
