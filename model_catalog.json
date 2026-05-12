@@ -874,12 +874,17 @@
     "extended_context_length": null,
     "license": "Apache-2.0",
     "downloads": 217884,
-    "num_quants": 1,
+    "num_quants": 2,
     "quants": [
       {
         "model_id": "ggml-org/gemma-4-E4B-it-GGUF/gemma-4-E4B-it-Q4_K_M",
         "path": "https://huggingface.co/ggml-org/gemma-4-E4B-it-GGUF/resolve/main/gemma-4-E4B-it-Q4_K_M.gguf",
         "file_size": "5.34 GB"
+      },
+      {
+        "model_id": "bartowski/google_gemma-4-E4B-it-GGUF/google_gemma-4-E4B-it-Q6_K",
+        "path": "https://huggingface.co/bartowski/google_gemma-4-E4B-it-GGUF/resolve/main/google_gemma-4-E4B-it-Q6_K.gguf",
+        "file_size": "6.33 GB"
       }
     ],
     "num_mmproj": 1,
